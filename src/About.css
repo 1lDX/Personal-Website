@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #24252a;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+  }
+  
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #b9a134;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: #ffdd46;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color: black;
+  }
+  
+  .cta:hover {
+    background-color: #b9a134;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #ffdd46;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+
+
+
+
+
+/* .logo{ 
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0 20px ;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    text-align: center;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #fffc31, 0 0 50px #fae954;
+    
+}
+
+#fade{
+    opacity: 0.9;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #ffdd46, 0 0 50px #ffdd46;
+    -webkit-animation: fade 3s infinite alternate;
+    -moz-animation: fade 3s infinite alternate;
+    -o-animation: fade 3s infinite alternate;
+    animation: fade 3s infinite alternate;
+  }
+
+
+
+  .neon-blue {
+ 
+    text-align: center;
+    color: #ebffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3), 0 0px 15px #fff, 0 0 10px #fffc31, 0 0 50px #fae954;
+  }
+
+  @-moz-keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @-webkit-keyframes blink {
+    45% {
+      opacity: 0.5;
+    }
+  }
+  @-o-keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @keyframes blink {
+    70% {
+      opacity: 0.7;
+    }
+  }
+  @-moz-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-webkit-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @-o-keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes fade {
+    40% {
+      opacity: 0.8;
+    }
+    42% {
+      opacity: 0.1;
+    }
+    43% {
+      opacity: 0.8;
+    }
+    45% {
+      opacity: 0.1;
+    }
+    46% {
+      opacity: 0.8;
+    }
+  }
+
+  .mid-part-flex {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    background-color: #24252a;
+    gap: 10px;
+    margin: auto;
+    width: auto;
+    height: 500px 10%;
+    padding-top: 100px 10%;
+  }
+  
+  .Hello-world{
+    color: #ffdd46;
+    font-size: 30px;
+  }
+
+  .Larmar{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px;
+    color: white;
+  }
+  
+  .typewrite{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to right, white, #eedd44); 
+    display: inline-block;
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    width: 298px;
+  }
+
+  .Welcome{
+    color: white;
+    display: inline;
+  }
+  .wave{
+    position: static;
+    animation: rotete 5s infinite;
+    -webkit-animation: rotate 10s normal linear infinite;
+    font-size: 25px;
+
+  }
+
+  @keyframes rotate{
+      50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+      }
+      100% {
+        -webkit-transform: rotate3d(0, 0, 1, 0);
+        transform: rotate3d(0, 0, 1, 360deg);
+      }
+    }
+
+
+.me-logo{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+   
+
+}
+
+.left{
+    padding-right: 40px;
+    
+}
+
+.right {
+    padding-top :90px;
+    padding-left: 50px;
+    color: white;
+    font-size: 30px;
+    text-indent: 70px;
+    text-align: justify;
+
+}
+
+.middle-box{
+    background-color: #414147;
+    padding: 50px;
+    display: flex;
+    border: 3px solid #515158;
+    border-radius: 25px;
+    margin: 100px;
+}
+
+
+.About-me-box{
+    display: flex;
+    align-items: center;
+}
+
+.About-me{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.About-me-bar{
+    width: 250px;
+    height: 4px;
+    background-color: #eedd44;
+    margin-top: 3px;
+    margin-left:20px;
+    border-radius: 30px;
+}
+
+
+/* .About-me-bar{
+    display: flex;
+    margin: auto;
+    border: solid #ffdd46;
+    border-radius: 15px;
+    border-top: 0px;
+    border-width: 3;    
+    
+    
+} */
+
